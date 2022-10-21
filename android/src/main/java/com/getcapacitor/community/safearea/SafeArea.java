@@ -29,7 +29,7 @@ public class SafeArea {
         windowInsets = windowInsetsCompat.getInsets(WindowInsetsCompat.Type.systemBars());
         dp = Resources.getSystem().getDisplayMetrics().density;
         ret.put("top", windowInsets.top / dp);
-        if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+        if (android.os.Build.VERSION.SDK_INT > Build.VERSION_CODES.S_V2) {
             ret.put("bottom", windowInsets.bottom / dp);
         } else {
             ret.put("bottom", 0);

@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.res.Resources;
 import android.os.Build;
 import android.view.View;
+import android.view.WindowInsets;
 
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;

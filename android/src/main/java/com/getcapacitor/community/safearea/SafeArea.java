@@ -34,6 +34,23 @@ public class SafeArea {
         } else {
             ret.put("bottom", 0);
         }
+        view.setOnApplyWindowInsetsListener(new View.OnApplyWindowInsetsListener() {
+            @Override
+            public WindowInsets onApplyWindowInsets(View v, WindowInsets insets) {
+                // Update your app's layout based on the new window insets
+                // For example, you can adjust the padding of your views to account for the system UI insets
+                ret.put("top", insets.getStableInsetTop() / dp);
+                if (android.os.Build.VERSION.SDK_INT > Build.VERSION_CODES.S_V2) {
+                    v.setPadding(0, 0, 0, (int) (-1 * windowInsets.bottom));
+                    ret.put("bottom", insets.getInsets(v.getId()).bottom / dp);
+                } else {
+                    v.setPadding(0, 0, 0, 0);
+                    ret.put("bottom", 0);
+                }
+                call.resolve(ret);
+                return insets;
+            }
+        });
         call.resolve(ret);
     }
 }

@@ -1,6 +1,6 @@
 {
   "name": "android-safe-area",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Returns safe area",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
@@ -42,8 +42,8 @@
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {
-    "@capacitor/android": "^4.3.0",
-    "@capacitor/core": "^4.3.0",
+    "@capacitor/android": "^4.7.3",
+    "@capacitor/core": "^4.7.3",
     "@capacitor/docgen": "^0.2.0",
     "@ionic/eslint-config": "^0.3.0",
     "@ionic/prettier-config": "^2.0.0",
@@ -58,7 +58,7 @@
     "typescript": "~4.8.4"
   },
   "peerDependencies": {
-    "@capacitor/core": "^4.3.0"
+    "@capacitor/core": "^4.7.3"
   },
   "prettier": "@ionic/prettier-config",
   "eslintConfig": {

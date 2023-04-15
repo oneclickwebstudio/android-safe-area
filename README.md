@@ -14,6 +14,7 @@ npx cap sync
 <docgen-index>
 
 * [`getInsets()`](#getinsets)
+* [Interfaces](#interfaces)
 
 </docgen-index>
 
@@ -31,5 +32,20 @@ getInsets() => any
 **Returns:** <code>any</code>
 
 --------------------
+
+
+### Interfaces
+
+
+#### SafeAreaInsets
+
+Interface of insets
+
+| Prop         | Type                |
+| ------------ | ------------------- |
+| **`top`**    | <code>number</code> |
+| **`left`**   | <code>number</code> |
+| **`right`**  | <code>number</code> |
+| **`bottom`** | <code>number</code> |
 
 </docgen-api>
